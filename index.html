@@ -4,10 +4,39 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Weather App</title>
+      <link rel="stylesheet" href="normalize.css" />
       <link rel="stylesheet" href="style.css" />
    </head>
    <body>
-      <h1>Weather App</h1>
+      <div class="wrapper">
+         <header class="header">
+            <div class="date">Friday 8 March</div>
+            <h1 class="city">Los Angeles</h1>
+         </header>
+         <main class="main">
+            <section class="section1">
+               <div class="icon-desc">
+                  <div class="section1-icon">🌞</div>
+                  <div class="section1-desc">Clear</div>
+               </div>
+               <div class="temperature">
+                  <div>
+                     <div class="temperature-left">25°c</div>
+                  </div>
+                  <div class="temperature-right">
+                     <div class="temperature-day">28°</div>
+                     <div class="temperature-spacer"></div>
+                     <div class="temperature-night">18°</div>
+                  </div>
+               </div>
+            </section>
+            <section class="section2">
+               <div>Humidity 💧</div>
+               <div>Wind 💨</div>
+            </section>
+         </main>
+         <footer></footer>
+      </div>
       <script src="meteo.js"></script>
    </body>
 </html>
