@@ -1,4 +1,121 @@
-body {
-   background: aquamarine;
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   outline: 0;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box;
    font-family: sans-serif;
+   color: var(--color-text);
+}
+
+:root {
+   --color-primary: rgb(43, 195, 255);
+   --color-text: rgb(255, 255, 255);
+   --color-secondary: rgb(70, 209, 251);
+}
+
+body,
+html {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+}
+
+.wrapper {
+   background-color: var(--color-secondary);
+   min-width: 600px;
+   border-radius: 20px;
+}
+
+/* Header */
+
+.header {
+   background-color: var(--color-primary);
+   padding: 1rem 2rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 20px 20px 0 0;
+}
+
+.city {
+   font-size: 2.6rem;
+   margin: 0;
+}
+.date {
+   margin: 10px 0;
+   font-size: 2rem;
+}
+
+/* Main */
+
+.main {
+   padding: 0 2rem;
+}
+
+/* Section 1 */
+
+.section1 {
+   margin: 5rem 0 0;
+}
+
+.icon-desc {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+.section1-icon {
+   font-size: 3rem;
+}
+
+.section1-desc {
+   font-size: 3rem;
+}
+
+/* Temperatures */
+
+.temperature {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 2rem;
+}
+
+.temperature-left {
+   font-size: 12rem;
+   padding: 0 5rem 0 0;
+}
+
+.weather-temperature-right {
+   font-size: 4rem;
+}
+
+.temperature-day {
+   margin: 0 0 5px;
+}
+
+.temperature-spacer {
+   height: 1px;
+   width: 100%;
+   background-color: var(--color-text);
+}
+
+.temperature-night {
+   margin: 7px 0 0;
+}
+
+/* Section 2 */
+
+.section2 {
+   margin: 1rem 0 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 3rem;
+   font-size: 2rem;
+   border-top: 1px solid var(--color-text);
 }
