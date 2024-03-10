@@ -18,7 +18,7 @@ Welcome to the Weather App! This web application allows you to check the current
 
 1. Clone this repository to your local machine.
 2. Obtain an API key from [OpenWeatherMap](https://openweathermap.org/).
-3. Add the following code to `conf.js`, replacing `"YOUR_API_KEY"` with your actual API key:
+3. Add the following code to `conf.js`, replacing `YOUR_API_KEY` with your actual API key:
 
 ```javascript
 const apiKey = "YOUR_API_KEY";
