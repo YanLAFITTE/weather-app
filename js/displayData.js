@@ -18,8 +18,8 @@ const displayData = (weatherData) => {
    tempDayElement.textContent = `${Math.floor(weatherData.main.temp_max)}°`;
    tempNightElement.textContent = `${Math.floor(weatherData.main.temp_min)}°`;
 
-   humidityElement.textContent = `humidity: ${weatherData.main.humidity} %`;
-   windElement.textContent = `wind: ${Math.floor(weatherData.wind.speed)} km/h`;
+   humidityElement.textContent = `humidité: ${weatherData.main.humidity} %`;
+   windElement.textContent = `vent: ${Math.floor(weatherData.wind.speed)} km/h`;
 };
 
 // Function to get weather icon based on icon code
