@@ -1,11 +1,14 @@
 const displayData = (weatherData) => {
    console.log(weatherData);
+   console.log(weatherData.weather[0]);
    const cityElement = document.querySelector(".city");
    const iconElement = document.querySelector(".section1-icon");
    const descElement = document.querySelector(".section1-desc");
    const tempElement = document.querySelector(".temperature-left");
    const tempDayElement = document.querySelector(".temperature-day");
    const tempNightElement = document.querySelector(".temperature-night");
+   const humidityElement = document.querySelector(".humidity");
+   const windElement = document.querySelector(".wind");
 
    cityElement.textContent = weatherData.name;
 
@@ -16,6 +19,9 @@ const displayData = (weatherData) => {
    tempElement.textContent = `${Math.floor(weatherData.main.temp)}°c`;
    tempDayElement.textContent = `${Math.floor(weatherData.main.temp_max)}°`;
    tempNightElement.textContent = `${Math.floor(weatherData.main.temp_min)}°`;
+
+   humidityElement.textContent = `humidity: ${weatherData.main.humidity} %`;
+   windElement.textContent = `wind: ${Math.floor(weatherData.wind.speed)} km/h`;
 };
 
 // Function to get weather icon based on icon code
