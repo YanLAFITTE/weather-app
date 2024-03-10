@@ -1,6 +1,4 @@
 const displayData = (weatherData) => {
-   console.log(weatherData);
-   console.log(weatherData.weather[0]);
    const cityElement = document.querySelector(".city");
    const iconElement = document.querySelector(".section1-icon");
    const descElement = document.querySelector(".section1-desc");

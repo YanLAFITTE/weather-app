@@ -1,2 +1,2 @@
-const apiKey = "API Key here";
+const apiKey = "YOUR_API_KEY";
 export default apiKey;
